@@ -8,9 +8,16 @@ feature 'Home page' do
   #   Given I am a visitor
   #   When I visit the home page
   #   Then I see "Welcome"
+  #
+
   scenario 'visit the home page' do
+    post = create(:post)
+    illustration = create(:illustration)
+
     visit root_path
     expect(page).to have_content 'Welcome'
+    expect(page).to have_content post.title
+    expect(page).to have_content illustration.title
   end
 
 end

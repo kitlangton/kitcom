@@ -18,6 +18,7 @@ gem 'unicorn-rails'
 gem 'carrierwave'
 gem 'figaro'
 gem 'fog'
+gem 'rmagick', :require => 'RMagick'
 
 group :development do
   gem 'better_errors'

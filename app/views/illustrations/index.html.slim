@@ -10,13 +10,7 @@ table
       th
 
   tbody
-    - @illustrations.each do |illustration|
-      tr
-        td = illustration.title
-        td = illustration.image
-        td = link_to 'Show', illustration
-        td = link_to 'Edit', edit_illustration_path(illustration)
-        td = link_to 'Destroy', illustration, data: {:confirm => 'Are you sure?'}, :method => :delete
+    = render @illustrations
 
 br
 

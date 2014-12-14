@@ -3,7 +3,8 @@
 
   .form-inputs
     = f.input :title
-    = f.input :image
+    = f.file_field :image
+    = f.hidden_field :image_cache
 
   .form-actions
     = f.button :submit

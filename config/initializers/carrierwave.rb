@@ -6,5 +6,9 @@ CarrierWave.configure do |config|
     # :region                 => 'us-west-1'
   }
   config.fog_directory  = ENV['s3_bucket']
+
+  if Rails.env.test?
+    config.storage :file
+  end
 end
 
