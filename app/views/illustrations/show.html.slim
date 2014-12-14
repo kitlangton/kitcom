@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @illustration.title
+p
+  strong Image:
+  = @illustration.image
+
+= link_to 'Edit', edit_illustration_path(@illustration)
+'|
+= link_to 'Back', illustrations_path
