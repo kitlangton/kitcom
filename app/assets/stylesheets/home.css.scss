@@ -1,0 +1,18 @@
+#loading-text {
+  height: 0;
+  position: relative;
+}
+
+
+#grid-container {
+  width: 100%;
+  position: relative;
+
+  .box {
+    opacity: 0;
+    float: left;
+    background-color: #00ffff;
+    position: relative;
+  }
+}
+

@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require masonry/jquery.masonry
+//= require jquery.grid-a-licious.min
+//= require jquery.imagesloaded
 //= require_tree .
