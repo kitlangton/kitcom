@@ -1,8 +1,5 @@
-.image-container
-  =image_tag @presenter.most_recent_image, class: "banner-image"
-  /h2= "Latest Illustration: " + @presenter.most_recent_illustration.title
+.masonry-container
+  = render @illustrations
 .container
-  = render @presenter.posts
+  = render @posts
 br
-/.container
-/  = render @illustrations

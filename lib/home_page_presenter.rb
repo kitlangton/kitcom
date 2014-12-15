@@ -10,11 +10,4 @@ class HomePagePresenter
   def most_recent_image
     most_recent_illustration.image_url
   end
-
-  def most_recent_illustration
-    @illustrations.order("created_at").last
-  end
-
-
-
 end

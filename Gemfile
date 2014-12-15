@@ -19,6 +19,7 @@ gem 'carrierwave'
 gem 'figaro'
 gem 'fog'
 gem 'rmagick', :require => 'RMagick'
+gem 'masonry-rails'
 
 group :development do
   gem 'better_errors'

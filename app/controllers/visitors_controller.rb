@@ -2,8 +2,7 @@ class VisitorsController < ApplicationController
   require 'home_page_presenter'
 
   def index
-    Post.all
-
-    @presenter = HomePagePresenter.new(illustrations: Illustration.all, posts: Post.all)
+    @posts = Post.all
+    @illustrations = Illustration.all
   end
 end
