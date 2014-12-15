@@ -1,7 +1,8 @@
-h3 Welcome
-
+.image-container
+  =image_tag @presenter.most_recent_image, class: "banner-image"
+  /h2= "Latest Illustration: " + @presenter.most_recent_illustration.title
 .container
-  = render @posts
+  = render @presenter.posts
 br
-.container
-  = render @illustrations
+/.container
+/  = render @illustrations
