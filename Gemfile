@@ -21,6 +21,7 @@ gem 'fog'
 gem 'rmagick', :require => 'RMagick'
 gem 'masonry-rails'
 gem 'redcarpet'
+gem 'jquery-turbolinks'
 
 group :development do
   gem 'better_errors'
