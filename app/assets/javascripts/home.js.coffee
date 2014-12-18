@@ -1,8 +1,13 @@
+$ ->
+  $("#grid-container").gridalicious
+    width: 300
+    selector: ".box"
+    animate: true
 
 $ ->
  if $(".link").css('display') == "none"
    $hidden = true
- $(".post").velocity "transition.slideUpIn",
+ $(".fade-in").velocity "transition.slideUpIn",
   stagger: 250
 
  $(".glyphicon").hover ->
@@ -40,13 +45,5 @@ $ ->
 
  $(".post").hover ->
    $(@).find(".title").stop(true,true).velocity
-    colorBlue: 150
-    colorGreen: 50
-    ,
-      duration: 150
   , ->
    $(@).find(".title").stop(true,true).velocity
-    colorBlue: 0
-    colorGreen: 0
-    ,
-      duration: 150
