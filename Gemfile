@@ -20,6 +20,7 @@ gem 'figaro'
 gem 'fog'
 gem 'rmagick', :require => 'RMagick'
 gem 'masonry-rails'
+gem 'redcarpet'
 
 group :development do
   gem 'better_errors'

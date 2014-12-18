@@ -1,8 +1,15 @@
+
 .post.col-sm-12
-  .title
-    strong= post.title
-  .body= post.body
-  .controls
-    /= link_to 'Show', post
-    /= link_to 'Edit', edit_post_path(post)
-    /= link_to 'Destroy', post, data: {:confirm => 'Are you sure?'}, :method => :delete
+  .post-text
+    h1
+      .date
+        =post.created_at.strftime("%B %d, %Y")
+      .title
+        = post.title.upcase
+      .line
+    .body.col-sm-12== Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {}).render(post.body)
+
+  /.controls
+  /  /= link_to 'Show', post
+  /  /= link_to 'Edit', edit_post_path(post)
+  /  /= link_to 'Destroy', post, data: {:confirm => 'Are you sure?'}, :method => :delete

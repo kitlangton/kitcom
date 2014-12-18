@@ -1,17 +1,7 @@
 h1 Listing illustrations
 
-table
-  thead
-    tr
-      th Title
-      th Image
-      th
-      th
-      th
-
-  tbody
-    = render @illustrations
+#grid-container
+  = render @illustrations
 
 br
-
 = link_to 'New Illustration', new_illustration_path

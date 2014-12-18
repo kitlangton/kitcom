@@ -13,13 +13,9 @@ feature 'Home page' do
   scenario 'visit the home page' do
     post = create(:post)
     illustration = create(:illustration)
-    date = Date.today.strftime("%B %e, %Y")
-
     visit root_path
-    expect(page).to have_content 'Welcome'
-    expect(page).to have_css ".date", text: date
     expect(page).to have_css ".post", text: post.title
-    expect(page).to have_css ".illustration", text: illustration.title
+    expect(page).to have_css ".post", text: post.body
   end
 
 end

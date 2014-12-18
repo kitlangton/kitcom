@@ -1,9 +1,11 @@
-#loading-text.container
-  .text-center
-    h1 Images Loading
-    = image_tag 'kit_logo.jpg'
-#grid-container
-  = render @illustrations
+
+/#grid-container
+/  = render @illustrations
 .container
-  = render @posts
+  .col-md-8.col-md-offset-2
+
+    /.post.col-sm-12
+    /  #grid-container
+    /    = render @illustrations
+    = render @posts
 br
