@@ -17,5 +17,14 @@ html
     /main[role="main"]
     .logo-container
       = image_tag 'kit_logo.png', height: 125, width: 125, class: "kit-logo"
-    == render 'layouts/messages'
-    == yield
+    .container
+      .col-sm-1.link-bar.fade-in
+        h2.show-links-button
+          span.glyphicon.glyphicon-chevron-down
+          span.glyphicon.glyphicon-chevron-up
+        .links
+          h3.link= link_to_unless_current "HOME", root_path
+          h3.link= link_to_unless_current "ART", illustrations_path
+          h3.link= link_to_unless_current "ABOUT", about_path
+      == render 'layouts/messages'
+      == yield

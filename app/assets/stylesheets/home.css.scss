@@ -1,14 +1,17 @@
 html {
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 .link-bar {
+
+
   .show-links-button {
     position: relative;
-    bottom: 5px;
-  padding-top: 0px;
-  margin-top: 0px;
-}
+    bottom: 4px;
+    padding-top: 0px;
+    margin-bottom: -5px;
+    margin-top: 0px;
+  }
   // background-color: blue;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -28,6 +31,9 @@ html {
     display: none;
   }
   .link {
+    a {
+      color: #018fd2;
+    }
     font-family: "Fjalla One";
     display: none;
   }

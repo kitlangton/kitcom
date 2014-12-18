@@ -5,4 +5,9 @@ class VisitorsController < ApplicationController
     @posts = Post.all
     @illustrations = Illustration.all
   end
+
+  def about
+
+  end
+
 end
