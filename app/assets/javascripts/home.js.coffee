@@ -1,8 +1,9 @@
 $ ->
-  $("#grid-container").gridalicious
-    width: 300
-    selector: ".box"
-    animate: true
+  $("#grid-container").imagesLoaded ->
+    $("#grid-container").gridalicious
+      width: 300
+      selector: ".box"
+      animate: true
 
 $ ->
  if $(".link").css('display') == "none"
