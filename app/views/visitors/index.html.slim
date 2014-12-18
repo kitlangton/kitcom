@@ -2,7 +2,14 @@
 /#grid-container
 /  = render @illustrations
 .container
-  .col-md-8.col-md-offset-2
+  .col-sm-1.link-bar
+    h2.show-links-button
+      span.glyphicon.glyphicon-chevron-down
+      span.glyphicon.glyphicon-chevron-up
+    .links
+      h3.link= link_to "ILLUSTRATION", illustrations_path
+      h3.link= link_to "WORDS", posts_path
+  .col-md-8.col-md-offset-1
 
     /.post.col-sm-12
     /  #grid-container

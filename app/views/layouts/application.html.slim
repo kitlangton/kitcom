@@ -15,6 +15,7 @@ html
     header
       /== render 'layouts/navigation'
     /main[role="main"]
-    = image_tag 'kit_logo.png', height: 125, width: 125, class: "kit-logo"
+    .logo-container
+      = image_tag 'kit_logo.png', height: 125, width: 125, class: "kit-logo"
     == render 'layouts/messages'
     == yield

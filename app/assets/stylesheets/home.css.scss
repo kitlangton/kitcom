@@ -1,6 +1,44 @@
+
+.link-bar {
+  .show-links-button {
+    position: relative;
+    bottom: 5px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+  // background-color: blue;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .glyphicon {
+    opacity: .5;
+    width: 0;
+  }
+  .glyphicon {
+    cursor: pointer;
+  }
+  .glyphicon-chevron-up {
+    display: none;
+  }
+  .link {
+    font-family: "Fjalla One";
+    display: none;
+  }
+}
+
 #loading-text {
   // height: 0;
   position: relative;
+}
+
+.logo-container {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 .kit-logo {
@@ -17,20 +55,19 @@
   transition: background-color .3s;
   padding-top: 10px;
   background: #eee;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+
+  border-bottom: 1px solid #ccc;
 
   &:hover {
     background-color: #f4f4f4;
     border-bottom: 1px solid lightblue;
   }
 
-  border-bottom: 1px solid #ccc;
-
   &:last-child {
-  border-bottom: 0px solid #ccc;
+    border-bottom: 0px solid #ccc;
   }
-
-  padding-bottom: 25px;
-  margin-bottom: 15px;
 
   .title {
     font-family: "Fjalla One", sans-serif;
@@ -55,10 +92,10 @@
 
   .body {
     p {
-    line-height: 20px;
-    font-family: "Crimson Text", sans-serif;
-    font-size: 1.4em;
-  }
+      line-height: 20px;
+      font-family: "Crimson Text", sans-serif;
+      font-size: 1.4em;
+    }
   }
 }
 
@@ -73,4 +110,3 @@
     position: relative;
   }
 }
-

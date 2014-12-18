@@ -17,4 +17,5 @@
 //= require jquery.grid-a-licious.min
 //= require jquery.imagesloaded
 //= require velocity.min
+//= require velocity.ui
 //= require_tree .
