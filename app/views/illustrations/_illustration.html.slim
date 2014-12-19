@@ -1,2 +1,4 @@
 .box
-  = image_tag illustration.image_url(:medium)
+  a= image_tag illustration.image_url(:medium), href: illustration.image_url, data: { colorbox: true, title: illustration.title, retinaImage: true }
+  /a= image_tag product.product_image_url(:thumb), class: "product-image-th  img-responsive center-block thumbnail", href: product.product_image_url, data: { colorbox: true, title: product.name }
+  

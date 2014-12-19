@@ -22,6 +22,7 @@ gem 'rmagick', :require => 'RMagick'
 gem 'masonry-rails'
 gem 'redcarpet'
 gem 'jquery-turbolinks'
+gem 'colorbox-rails'
 
 group :development do
   gem 'better_errors'

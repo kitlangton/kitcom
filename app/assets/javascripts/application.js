@@ -17,6 +17,7 @@
 //= require bootstrap-sprockets
 //= require jquery.grid-a-licious.min
 //= require jquery.imagesloaded
+//= require colorbox-rails
 //= require velocity.min
 //= require velocity.ui
 //= require_tree .
