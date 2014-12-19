@@ -10,11 +10,12 @@ $ ->
     rotateZ: "360deg"
     ,
       loop: true
+      easing: "linear"
 
 $ ->
   $("#grid-container").imagesLoaded ->
-    $("#kit-logo").css "display", "block"
     $("#spinner").css "display", "none"
+    $("#kit-logo").css "display", "block"
     $("#grid-container").gridalicious
       width: 300
       selector: ".box"
