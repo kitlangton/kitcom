@@ -1,3 +1,7 @@
+.spinner {
+  display: none;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -48,12 +52,12 @@ html {
   margin: 0 auto;
   display: block;
   text-align: center;
-}
-
-.kit-logo {
   text-align: center;
   margin-top: 20px;
   padding-bottom: 20px;
+}
+
+.kit-logo {
 }
 
 .test-image {

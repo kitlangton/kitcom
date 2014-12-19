@@ -16,7 +16,8 @@ html
       /== render 'layouts/navigation'
     /main[role="main"]
     .logo-container
-    = image_tag 'kit_logo.png', height: 125, width: 125, class: "kit-logo"
+      = image_tag 'kit_logo.png', height: 125, width: 125, id: "kit-logo"
+      = image_tag "loading.png", height: 125, width: 125, id: "spinner"
     .container
       .col-sm-1.link-bar.fade-in
         h2.show-links-button
