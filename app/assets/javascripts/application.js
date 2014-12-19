@@ -20,4 +20,5 @@
 //= require colorbox-rails
 //= require velocity.min
 //= require velocity.ui
+//= require jquery.blast
 //= require_tree .

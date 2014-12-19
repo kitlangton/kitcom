@@ -1,6 +1,23 @@
 .container
-  .col-sm-8
-    h1 Hello,
-    p My name is Kit Langton
-    p I'm interested in Illustration, Motion Graphics, Web Design, Programming, and Music.
-    p I'll explore those here.
+  .col-sm-8.col-sm-offset-1
+    .everything
+      h1.hello= random_salutation
+      p
+        span.name-is My name is 
+        strong.name  Kit Langton.
+      p.flip I'm interested in Illustration, Design, Programming, and Music.
+      .dialogue
+        hr.bdialogue
+        p
+        p Yes, I know this animation is completely unneccesary.
+        p But who cares about an "About page"?
+        p Why are you even here?
+        p Here is me blurry:
+        = image_tag "my_face.jpg", height: 300, width: 200, id: "blurry-me"
+        p Is that what you wanted?
+        p Oh.
+        p You wanted my email?
+        p Sorry...
+    .hide-mail
+      h3 Email me?
+      h1= mail_to "kit.langton@gmail.com"
