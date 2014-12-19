@@ -11,12 +11,15 @@ $ ->
     ,
       loop: true
       easing: "linear"
-
-$ ->
-  $("#grid-container").imagesLoaded ->
+  stopLoading = ->
     $("#spinner").css "display", "none"
     $("#kit-logo").css "display", "block"
+  # setTimeout(stopLoading, 1200)
+
+  $("#grid-container").imagesLoaded ->
+    stopLoading()
     $("#grid-container").gridalicious
       width: 300
       selector: ".box"
       animate: true
+
