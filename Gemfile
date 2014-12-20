@@ -23,6 +23,7 @@ gem 'masonry-rails'
 gem 'redcarpet'
 gem 'jquery-turbolinks'
 gem 'colorbox-rails'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'better_errors'
