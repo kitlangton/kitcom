@@ -38,5 +38,3 @@ $ ->
     duration: 50
   $(".hide-mail").velocity "transition.slideUpIn",
     delay: 21100
-
-
