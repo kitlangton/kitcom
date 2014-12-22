@@ -1,10 +1,9 @@
-= simple_form_for(@illustration) do |f|
-  = f.error_notification
+= bootstrap_form_for(@illustration) do |f|
 
   .form-inputs
-    = f.input :title
+    = f.text_field :title
     = f.file_field :image
     = f.hidden_field :image_cache
 
   .form-actions
-    = f.button :submit
+    = f.submit :submit

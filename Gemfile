@@ -23,6 +23,7 @@ gem 'masonry-rails'
 gem 'redcarpet'
 gem 'jquery-turbolinks'
 gem 'colorbox-rails'
+gem 'bootstrap_form'
 gem 'newrelic_rpm'
 
 group :development do
