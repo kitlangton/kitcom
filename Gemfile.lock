@@ -180,6 +180,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
+    newrelic_rpm (3.9.8.273)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     parser (2.2.0.pre.8)
@@ -328,6 +329,7 @@ DEPENDENCIES
   jquery-turbolinks
   launchy
   masonry-rails
+  newrelic_rpm
   pg
   quiet_assets
   rails (= 4.1.8)
