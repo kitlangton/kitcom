@@ -13,6 +13,11 @@ $ ->
       loop: true
       easing: "linear"
 
+
+  stopLoading = ->
+    $("#spinner").css "display", "none"
+    $("#kit-logo").css "display", "block"
+
   $('#grid-container').gridalicious
     width: 300
     selector: ".hidden-image"
@@ -21,18 +26,14 @@ $ ->
       speed: 200
       duration: 300
 
-  stopLoading = ->
-    $("#spinner").css "display", "none"
-    $("#kit-logo").css "display", "block"
-
-  $("#hidden-images").imagesLoaded ->
+  $("#grid-container").imagesLoaded().always ->
     stopLoading()
 
-  onProgress = (imgLoad, image) ->
-    $('#grid-container').gridalicious 'prepend', image
-    return
-
-  $('#hidden-images').imagesLoaded().progress onProgress
+  # onProgress = (imgLoad, image) ->
+  #   $('#grid-container').gridalicious 'prepend', image
+  #   return
+  #
+  # $('#hidden-images').imagesLoaded().progress onProgress
 
   # $('#grid-container').imagesLoaded ->
   #   $("#spinner").css "display", "none"
