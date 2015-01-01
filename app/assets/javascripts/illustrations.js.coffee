@@ -25,14 +25,15 @@ $ ->
     $("#spinner").css "display", "none"
     $("#kit-logo").css "display", "block"
 
-  $("#grid-container").imagesLoaded ->
+  $("#hidden-images").imagesLoaded ->
     stopLoading()
 
-  # onProgress = (imgLoad, image) ->
-  #   $('#grid-container').gridalicious 'prepend', image
-  #   return
-  #
-  # $('#grid-container').imagesLoaded().progress onProgress
+  onProgress = (imgLoad, image) ->
+    $('#grid-container').gridalicious 'prepend', image
+    return
+
+  $('#hidden-images').imagesLoaded().progress onProgress
+
   # $('#grid-container').imagesLoaded ->
   #   $("#spinner").css "display", "none"
   #   $("#kit-logo").css "display", "block"
