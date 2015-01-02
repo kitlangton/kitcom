@@ -25,6 +25,7 @@ gem 'jquery-turbolinks'
 gem 'colorbox-rails'
 gem 'bootstrap_form'
 gem 'newrelic_rpm'
+gem 'imagesLoaded_rails'
 
 group :development do
   gem 'better_errors'

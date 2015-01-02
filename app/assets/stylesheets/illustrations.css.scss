@@ -10,11 +10,17 @@
   cursor: pointer;
 }
 
-// #hidden-images {
-//   display: none;
+// .item {
+//   margin: 20px;
 // }
-//
-.is-loading {
-  background-color: black;
-  background-image: url('http://desandro.github.io/imagesloaded/assets/loading.gif');
+#grid-container {
+
+}
+
+// .item { width: 33%; margin-bottom: 0px; padding: 15px; box-sizing: border-box; }   
+// .item.large{ width: 66%; }
+// .item > div  { color: #fff; background-color: #000; padding: 20px; } 
+
+#hidden-images {
+  display: none;
 }

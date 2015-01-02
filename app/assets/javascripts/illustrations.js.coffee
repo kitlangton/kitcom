@@ -13,27 +13,53 @@ $ ->
       loop: true
       easing: "linear"
 
-
   stopLoading = ->
     $("#spinner").css "display", "none"
     $("#kit-logo").css "display", "block"
 
   $('#grid-container').gridalicious
-    width: 300
-    selector: ".hidden-image"
+    selector: ".item"
     animate: true
-    animationOptions:
-      speed: 200
-      duration: 300
+    width: 250
 
-  $("#grid-container").imagesLoaded().always ->
+  onProgress = (instance, image) ->
+    newitem= $(image.img).parent()
+    $("#grid-container").gridalicious 'append', newitem
+    # $('#grid-container').isotope
+    #   layoutMode: "masonry"
+    #   masonry:
+    #       gutter: 0
+    #       itemSelector: ".item"
+    #       columnWidth: 3
+
+  $("#hidden-images").imagesLoaded().progress onProgress
+
+  $("#hidden-images").imagesLoaded ->
     stopLoading()
 
+  # $('#hidden-images').imagesLoaded ->
+  #   $('#grid-container').isotope
+  #     layoutMode: "masonry"
+  #     masonry:
+  #         gutter: 0
+  #         itemSelector: ".item"
+  #         columnWidth: 3
+  #   stopLoading()
+
+  # $("#hidden-images").imagesLoaded ->
+  #
   # onProgress = (imgLoad, image) ->
   #   $('#grid-container').gridalicious 'prepend', image
   #   return
   #
   # $('#hidden-images').imagesLoaded().progress onProgress
+
+  # $("#hidden-images").imagesLoaded().always((instance) ->
+  #   stopLoading()
+  # ).progress (instance, image) ->
+  #   alert image.img.src
+  #   $('#grid-container').isotope 'insert', [image]
+  #   return
 
   # $('#grid-container').imagesLoaded ->
   #   $("#spinner").css "display", "none"

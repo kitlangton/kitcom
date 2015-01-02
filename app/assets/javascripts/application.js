@@ -16,9 +16,10 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require jquery.grid-a-licious.min
-//= require jquery.imagesloaded
+//= require imagesloaded
 //= require colorbox-rails
 //= require velocity.min
 //= require velocity.ui
+//= require isotope.pkgd.min
 //= require jquery.blast
 //= require_tree .
